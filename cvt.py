@@ -30,7 +30,7 @@ def main():
 
     # linearly increasing tax rate
     rate = float(args.rate_min)
-    rate_increment = (float(args.rate_max) - float(args.rate_min)) / (int(args.dollar_max) - int(args.dollar_min))
+    rate_increment = (float(args.rate_max) - float(args.rate_min)) / (int(variable_rate_income) - int(args.dollar_min))
 
     # calculate the fixed rate tax on dollars above dollar_max. May be zero.
     tax = max_rate_income * float(args.rate_max)
